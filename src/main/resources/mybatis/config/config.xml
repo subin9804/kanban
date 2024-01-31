@@ -35,4 +35,8 @@
             </dataSource>
         </environment>
     </environments>
+    <mappers>
+    	<mapper resource="mybatis/mapper/UserMapper.xml" />
+    	<mapper resource="mybatis/mapper/WorkListMapper.xml" />
+    </mappers>
 </configuration>
