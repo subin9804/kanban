@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace: 식별자 -->
+<mapper namespace="UserMapper"> 
+
+	<!-- id: 결과의 고유식별자 / type: 매핑되는 객체의 클래스 경로-->
+	<resultMap id="userMap" type="models.member.Users">
+	
+		<!-- column: DB에서 칼럼 이름 / property: 매핑할 객체의 속성 이름 -->
+		<result column="userNo" property="userNo" />
+		<result column="userId" property="userId" />
+        <result column="userPw" property="userPw" />
+        <result column="userNm" property="userNm" />
+        <result column="email" property="email" />
+        <result column="mobile" property="mobile" />
+        <result column="regDt" property="regDt" />
+        <result column="modDt" property="modDt" />
+	</resultMap>
+</mapper>

@@ -1,5 +1,8 @@
 package models.works;
 
-public class Status {
-
+public enum Status {
+	READY,
+	PROGRESS,
+	DONE,
+	POSTPONE
 }
